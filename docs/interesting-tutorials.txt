@@ -1,0 +1,2 @@
+Building Dotnet 6 API Docker Image - TAKE A LOOK INTO min 9:54 for ASPNETCORE_HTTP_PORT AND  ASPNETCORE_URLS;
+https://www.youtube.com/watch?v=3s-RfwvijpY
