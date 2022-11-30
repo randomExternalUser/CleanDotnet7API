@@ -12,4 +12,5 @@ COPY --from=build /app ./
 
 EXPOSE 80
 EXPOSE 443
+
 ENTRYPOINT ["dotnet", "CleanDotnet7API.Api.dll"]
