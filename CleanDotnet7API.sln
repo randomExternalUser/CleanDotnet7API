@@ -5,17 +5,17 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BA7F428C-CD84-40CE-9782-CF4B9708F55F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanDotnet7API.Api", "src\CleanDotnet7API.Api\CleanDotnet7API.Api.csproj", "{CC6C5D82-CF63-40ED-92D4-5E95FD555D7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanDotnet7API.Api", "src\CleanDotnet7API.Api\CleanDotnet7API.Api.csproj", "{CC6C5D82-CF63-40ED-92D4-5E95FD555D7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanDotnet7API.Domain", "src\CleanDotnet7API.Domain\CleanDotnet7API.Domain.csproj", "{782095F5-31DB-45BC-A527-4AC3C627251D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanDotnet7API.Domain", "src\CleanDotnet7API.Domain\CleanDotnet7API.Domain.csproj", "{782095F5-31DB-45BC-A527-4AC3C627251D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{7699FC3A-6FC2-4969-841D-7A3DE1E43AC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanDotnet7Api.Infrastructure.DataAccess", "src\infrastructure\CleanDotnet7Api.Infrastructure.DataAccess\CleanDotnet7Api.Infrastructure.DataAccess.csproj", "{20876386-3167-4B01-8FB4-61E5874813AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanDotnet7Api.Infrastructure.DataAccess", "src\infrastructure\CleanDotnet7Api.Infrastructure.DataAccess\CleanDotnet7Api.Infrastructure.DataAccess.csproj", "{20876386-3167-4B01-8FB4-61E5874813AF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C58E03EB-6F3C-4CE0-8DCB-F159084C5C86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanDotnet7API.Domain.UnitTests", "tests\CleanDotnet7API.Domain.UnitTests\CleanDotnet7API.Domain.UnitTests.csproj", "{319AFA35-B49D-47F3-B1FE-3DDD73DCFE6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanDotnet7API.Domain.UnitTests", "tests\CleanDotnet7API.Domain.UnitTests\CleanDotnet7API.Domain.UnitTests.csproj", "{319AFA35-B49D-47F3-B1FE-3DDD73DCFE6C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ci", "ci", "{4CBCB792-1280-4EA9-BAAC-C89C26CCD125}"
 EndProject
@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "prd", "prd", "{726F89FC-8B3
 	ProjectSection(SolutionItems) = preProject
 		ci\prd\k8s.yml = ci\prd\k8s.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanDotnet7API.Application", "src\CleanDotnet7API.Application\CleanDotnet7API.Application.csproj", "{86F98F2B-509F-444F-AF42-5B33D1796975}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{319AFA35-B49D-47F3-B1FE-3DDD73DCFE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{319AFA35-B49D-47F3-B1FE-3DDD73DCFE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{319AFA35-B49D-47F3-B1FE-3DDD73DCFE6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86F98F2B-509F-444F-AF42-5B33D1796975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F98F2B-509F-444F-AF42-5B33D1796975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F98F2B-509F-444F-AF42-5B33D1796975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86F98F2B-509F-444F-AF42-5B33D1796975}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{319AFA35-B49D-47F3-B1FE-3DDD73DCFE6C} = {C58E03EB-6F3C-4CE0-8DCB-F159084C5C86}
 		{FA6D2A3F-7091-47BB-9A6E-A1BD54BB7F2E} = {4CBCB792-1280-4EA9-BAAC-C89C26CCD125}
 		{726F89FC-8B36-4C4D-AE3E-64563AD1E778} = {4CBCB792-1280-4EA9-BAAC-C89C26CCD125}
+		{86F98F2B-509F-444F-AF42-5B33D1796975} = {BA7F428C-CD84-40CE-9782-CF4B9708F55F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65798DA5-B6A8-495C-9AF7-375875FEE342}

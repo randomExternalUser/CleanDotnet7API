@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CleanDotnet7API.Application\CleanDotnet7API.Application.csproj" />
     <ProjectReference Include="..\CleanDotnet7API.Domain\CleanDotnet7API.Domain.csproj" />
     <ProjectReference Include="..\infrastructure\CleanDotnet7Api.Infrastructure.DataAccess\CleanDotnet7Api.Infrastructure.DataAccess.csproj" />
   </ItemGroup>

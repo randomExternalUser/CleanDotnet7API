@@ -1,11 +1,13 @@
 using CleanDotnet7Api.Infrastructure.DataAccess;
 using CleanDotnet7Api.Infrastructure.DataAccess.Repositories;
+using CleanDotnet7API.Application.Handlers;
 using CleanDotnet7API.Domain.Interfaces;
 using CleanDotnet7API.Domain.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<ApplicationDbContext>();
+builder.Services.AddScoped<IItemsHandler, ItemsHandler>();
 builder.Services.AddScoped<IItemsRepository, ItemsRepository>();
 builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
 
@@ -17,7 +19,7 @@ builder.Services.AddHealthChecks();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline. //
-if (app.Environment.IsDevelopment()){}
+if (app.Environment.IsDevelopment()) { }
 
 app.UseSwagger();
 app.UseSwaggerUI();

@@ -1,4 +1,5 @@
-﻿using CleanDotnet7API.Domain.Interfaces;
+﻿using CleanDotnet7API.Application.Handlers;
+using CleanDotnet7API.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanDotnet7API.Api.Controllers
@@ -7,17 +8,17 @@ namespace CleanDotnet7API.Api.Controllers
     [ApiController]
     public class ItemsController : ControllerBase
     {
-        private readonly IItemsRepository _itemsRepository;
+        private readonly IItemsHandler _itemsHanlder;
 
-        public ItemsController(IItemsRepository itemsRepository)
+        public ItemsController(IItemsHandler itemsHanlder)
         {
-            _itemsRepository = itemsRepository;
+            _itemsHanlder = itemsHanlder;
         }
 
         [HttpGet]
         public IActionResult GetItems()
         {
-            var items = _itemsRepository.GetItems();
+            var items = _itemsHanlder.GetItems();
             return Ok(items);
         }
     }
